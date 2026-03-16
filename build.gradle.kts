@@ -12,7 +12,7 @@ application {
 }
 
 kotlin {
-    jvmToolchain(24)
+    jvmToolchain(21)
 }
 
 dependencies {
@@ -32,4 +32,9 @@ dependencies {
     testImplementation(libs.kotlin.test.junit)
     implementation(libs.ktor.server.core)
     implementation(libs.ktor.server.netty)
+
+    implementation("org.postgresql:postgresql:42.7.2")
+    implementation("com.zaxxer:HikariCP:5.1.0")
+    implementation("org.apache.pdfbox:pdfbox:3.0.1")
 }
+
